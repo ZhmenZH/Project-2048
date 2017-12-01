@@ -1,19 +1,19 @@
 package danyl.Game;
 
+import danyl.GuiScreen.GuiScreen;
+
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
+import java.awt.event.*;
 import java.awt.image.BufferedImage;
 
-public class Game extends JPanel implements KeyListener, Runnable {
+public class Game extends JPanel implements KeyListener,MouseMotionListener,MouseListener, Runnable {
 
-    public static final int WIDTH = 400;
-    public static final int HEIGHT = 630;
-    public static final Font font = new Font("", Font.ITALIC, 25);
+    public static final int WIDTH = 500;
+    public static final int HEIGHT = 600;
+    public static final Font font = new Font("", Font.ITALIC, 32);
     BufferedImage image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
     //font
-
     private Thread game;
     private boolean running;
 
@@ -21,14 +21,16 @@ public class Game extends JPanel implements KeyListener, Runnable {
     private long elapsedtime;
     private boolean set;
 
-    private GameBoard board;
+    private GuiScreen screen;
 
     public Game() {
         setFocusable(true);
         setPreferredSize(new Dimension(WIDTH, HEIGHT));
         addKeyListener(this);
+        addMouseListener(this);
+        addMouseMotionListener(this);
 
-        board = new GameBoard(WIDTH / 2 - GameBoard.BOARD_WIDTH / 2, HEIGHT - GameBoard.BOARD_HEIGHT - 10);
+        screen = GuiScreen.getInstance();
     }
 
     @Override
@@ -99,10 +101,11 @@ public class Game extends JPanel implements KeyListener, Runnable {
     }
 
     private void render() {
-        Graphics2D graphics = (Graphics2D)image.getGraphics();
+        Graphics2D graphics = (Graphics2D)
+                image.getGraphics();
         graphics.setColor(Color.white);
         graphics.fillRect(0, 0, WIDTH, HEIGHT);
-        board.render(graphics);
+        screen.render(graphics);
 
         graphics.dispose();
 
@@ -112,9 +115,11 @@ public class Game extends JPanel implements KeyListener, Runnable {
     }
 
     public void update() {
-        board.update();
+        screen.update();
         Keyboard.update();
     }
+
+    //RULES
 
     @Override
     public void keyTyped(KeyEvent e) {
@@ -129,5 +134,40 @@ public class Game extends JPanel implements KeyListener, Runnable {
     @Override
     public void keyReleased(KeyEvent e) {
         Keyboard.KeyReleased(e);
+    }
+
+    @Override
+    public void mouseClicked(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mousePressed(MouseEvent e) {
+        screen.mousePressed(e);
+    }
+
+    @Override
+    public void mouseReleased(MouseEvent e) {
+        screen.mouseRealeased(e);
+    }
+
+    @Override
+    public void mouseEntered(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseExited(MouseEvent e) {
+
+    }
+
+    @Override
+    public void mouseDragged(MouseEvent e) {
+        screen.mouseDragged(e);
+    }
+
+    @Override
+    public void mouseMoved(MouseEvent e) {
+        screen.mouseMoved(e);
     }
 }

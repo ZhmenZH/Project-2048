@@ -1,16 +1,17 @@
 package danyl.Game;
 
 import java.awt.*;
+import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 
 //Cell = Tile
 public class Cell {
 
-    public static final int WIDTH = 90;
-    public static final int HEIGHT = 90;
+    public static final int WIDTH = 100;
+    public static final int HEIGHT = 100;
     public static final int ARC_WIDTH = 15;
     public static final int ARC_HEIGHT = 15;
-    public static final int SLIP_SPEED = 20;
+    public static final int SLIP_SPEED = 25;
 
     private int value;
     private Color background;
@@ -21,6 +22,14 @@ public class Cell {
 //???????????????????????????????????
     private Point slipTo;//скользить
 
+    private boolean beginAnimation = true;
+    private double scaleFirst = 0.1;
+    private BufferedImage beginImage;
+
+    private boolean combineAnimation = false;
+    private double scaleCombine = 1.2;
+    private BufferedImage combineImage;
+
     private boolean canCombine;
 
     public Cell(int value,int x, int y)
@@ -29,55 +38,59 @@ public class Cell {
         this.x = x;
         this.y = y;
         slipTo = new Point(x,y);
-        cellimage = new BufferedImage(WIDTH,HEIGHT,BufferedImage.TYPE_INT_ARGB);
+        cellimage = new BufferedImage(WIDTH,HEIGHT,BufferedImage.TYPE_INT_ARGB);////??????
+        beginImage = new BufferedImage(WIDTH,HEIGHT,BufferedImage.TYPE_INT_ARGB);
+        combineImage = new BufferedImage(WIDTH * 2,HEIGHT* 2,BufferedImage.TYPE_INT_ARGB);
         drawImage();
     }
 
     public void drawImage()
     {
-        Graphics2D graphics = (Graphics2D) cellimage.getGraphics();
+        Graphics2D graphics = (Graphics2D)
+        cellimage.getGraphics();
+
         if(value == 2){
-            background =  new Color(0xFF0C1B);
+            background =  new Color(0xC0CBB8);
             text = new Color(0x000000);
         }
         else if(value == 4){
-            background = new Color(0x0000FF);
+            background = new Color(0xC1B89F);
             text = new Color(0x000000);
         }
         else if(value == 8){
-            background = new Color(0x16FFA7);
+            background = new Color(0xFF8E2F);
             text = new Color(0x000000);
         }
         else if(value == 16){
-            background = new Color(0xFF1CB3);
+            background = new Color(0xFF712C);
             text = new Color(0x000000);
         }
         else if(value == 32){
-            background = new Color(0x808080);
+            background = new Color(0xFF3E12);
             text = new Color(0x000000);
         }
         else if(value == 64){
-            background = new Color(0xE9C24C);
+            background = new Color(0xE9100A);
             text = new Color(0x000000);
         }
         else if(value == 128){
-            background = new Color(0x9517FF);
+            background = new Color(0xFFF969);
             text = new Color(0x000000);
         }
         else if(value == 256){
-            background = new Color(0xFF9614);
+            background = new Color(0xFFDD31);
             text = new Color(0x000000);
         }
         else if(value == 512){
-            background = new Color(0x1BDAFF);
+            background = new Color(0xFFD32F);
             text = new Color(0x000000);
         }
         else if(value == 1024){
-            background = new Color(0x35E909);
+            background = new Color(0xFFC403);
             text = new Color(0x000000);
         }
         else if(value == 2048){
-            background = new Color(0x3E0610);
+            background = new Color(0xF5FF00);
             text = new Color(0x000000);
         }
         else{
@@ -95,7 +108,7 @@ public class Cell {
 
         if(value <= 64)
         {
-            font = Game.font.deriveFont(36F);
+            font = Game.font.deriveFont(40F);
         }
         else {
             font = Game.font;
@@ -110,11 +123,58 @@ public class Cell {
 
     public void update()
     {
+        if(beginAnimation) {
+            AffineTransform transform = new AffineTransform();
+            transform.translate(WIDTH / 2 - scaleFirst * WIDTH / 2, HEIGHT / 2 - scaleFirst * HEIGHT / 2);
+            transform.scale(scaleFirst, scaleFirst);
+            Graphics2D graphics2D = (Graphics2D)
+                    beginImage.getGraphics();
+            graphics2D.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+            graphics2D.setColor(new Color(0, 0, 0, 0));
+            graphics2D.fillRect(0, 0, WIDTH, HEIGHT);
+            graphics2D.drawImage(cellimage, transform, null);
+            scaleFirst += 0.1;
+            graphics2D.dispose();
 
+            if (scaleFirst >= 1) {
+                beginAnimation = false;
+            }
+        }
+
+        else if(combineAnimation) {
+            AffineTransform transform = new AffineTransform();
+            transform.translate(WIDTH / 2 - scaleCombine * WIDTH / 2, HEIGHT / 2 - scaleCombine * HEIGHT / 2);
+            transform.scale(scaleCombine, scaleCombine);
+            Graphics2D graphics2D = (Graphics2D)
+            combineImage.getGraphics();
+
+            graphics2D.setRenderingHint(RenderingHints.KEY_INTERPOLATION, RenderingHints.VALUE_INTERPOLATION_BICUBIC);
+            graphics2D.setColor(new Color(0, 0, 0, 0));
+            graphics2D.fillRect(0, 0, WIDTH, HEIGHT);
+            graphics2D.drawImage(cellimage, transform, null);
+            scaleCombine -= 0.1;
+            graphics2D.dispose();
+
+            if(scaleCombine <= 1)
+            {
+                combineAnimation = false;
+            }
+        }
     }
 
     public void render(Graphics2D graphics2D) {
-        graphics2D.drawImage(cellimage, x, y, null);
+        if(beginAnimation)
+        {
+            graphics2D.drawImage(beginImage,x,y,null);
+        }
+        else if(combineAnimation)
+        {
+            graphics2D.drawImage(combineImage,(int)(x + WIDTH/2 - scaleCombine * WIDTH/2),
+                                              (int)(y+ HEIGHT/2 - scaleCombine * HEIGHT/2),null);
+        }
+        else{
+            graphics2D.drawImage(cellimage, x, y, null);
+        }
     }
 
     public int getValue()
@@ -163,6 +223,18 @@ public class Cell {
 
     public void setY(int y) {
         this.y = y;
+    }
+
+    public boolean isCombineAnimation()
+    {
+        return combineAnimation;
+    }
+
+    public void setCombineAnimation(boolean combineAnimation)
+    {
+        this.combineAnimation = combineAnimation;
+//        if(combineAnimation)
+//            scaleCombine = 1.4;
     }
 }
 
