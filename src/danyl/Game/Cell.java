@@ -4,7 +4,6 @@ import java.awt.*;
 import java.awt.geom.AffineTransform;
 import java.awt.image.BufferedImage;
 
-//Cell = Tile
 public class Cell {
 
     public static final int WIDTH = 100;
@@ -19,7 +18,7 @@ public class Cell {
     private Font font;
     private int x,y;
     private BufferedImage cellimage;
-//???????????????????????????????????
+
     private Point slipTo;//скользить
 
     private boolean beginAnimation = true;
@@ -30,7 +29,7 @@ public class Cell {
     private double scaleCombine = 1.2;
     private BufferedImage combineImage;
 
-    private boolean canCombine;
+    private boolean canCombine = true;
 
     public Cell(int value,int x, int y)
     {
@@ -93,6 +92,34 @@ public class Cell {
             background = new Color(0xF5FF00);
             text = new Color(0x000000);
         }
+        else if(value == 4096){
+            background = new Color(0x03B7FF);
+            text = new Color(0x000000);
+        }
+
+        else if(value == 8192){
+            background = new Color(0x0290FF);
+            text = new Color(0x000000);
+        }
+
+        else if(value == 16384){
+            background = new Color(0x0033FF);
+            text = new Color(0x000000);
+        }
+
+        else if(value == 32768){
+            background = new Color(0x1C00FF);
+            text = new Color(0x000000);
+        }
+
+        else if(value == 65536){
+            background = new Color(0x7800FF);
+            text = new Color(0x000000);
+        }
+        else if(value == 131072){
+            background = new Color(0x7800CC);
+            text = new Color(0x000000);
+        }
         else{
             background = Color.black;
             text = Color.white;
@@ -152,7 +179,7 @@ public class Cell {
             graphics2D.setColor(new Color(0, 0, 0, 0));
             graphics2D.fillRect(0, 0, WIDTH, HEIGHT);
             graphics2D.drawImage(cellimage, transform, null);
-            scaleCombine -= 0.1;
+            scaleCombine -= 0.08;
             graphics2D.dispose();
 
             if(scaleCombine <= 1)
@@ -184,7 +211,6 @@ public class Cell {
 
     public void setValue(int value)
     {
-
         this.value = value;
         drawImage();
     }
@@ -199,7 +225,7 @@ public class Cell {
         this.canCombine = canCombine;
     }
 
-    public Point isSlipto()
+    public Point getSlipto()
     {
         return slipTo;
     }
@@ -233,37 +259,7 @@ public class Cell {
     public void setCombineAnimation(boolean combineAnimation)
     {
         this.combineAnimation = combineAnimation;
-//        if(combineAnimation)
-//            scaleCombine = 1.4;
+        if(combineAnimation)
+            scaleCombine = 1.2;
     }
 }
-
-//other
-//        else if(value == 4096){
-//            background = new Color();
-//            text = new Color();
-//        }
-//
-//        else if(value == 8192){
-//            background = new Color();
-//            text = new Color();
-//        }
-//
-//        else if(value == 16384){
-//            background = new Color();
-//            text = new Color();
-//        }
-//
-//        else if(value == 32768){
-//            background = new Color();
-//            text = new Color();
-//        }
-//
-//        else if(value == 65536){
-//            background = new Color();
-//            text = new Color();
-//        }
-//        else if(value == 131072){
-//            background = new Color();
-//            text = new Color();
-//        }

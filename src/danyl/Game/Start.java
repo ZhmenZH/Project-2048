@@ -13,8 +13,7 @@ public class Start {
         window.add(game);
         window.pack();
         window.setLocationRelativeTo(null);
-        window.setResizable(false);
-
+        window.setResizable(true);
         game.start();
     }
 }

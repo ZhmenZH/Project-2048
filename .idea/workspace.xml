@@ -2,26 +2,45 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="2048-Project:jar" />
+      <artifact name="2048" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5ca9485-793d-42be-a868-f64f23431a44" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/2048_Project_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/2048_Project_jar/2048-Project.lnk" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048-Project/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/danyl/Game/Sound.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/2048.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/2048_Project_jar/2048-Project.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Audio.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/MyButton.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/fnjfeiei.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/ForMenu.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/move.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/select.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/danyl/Game/2048.puml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/danyl/Game/Audio.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/danyl/Game/kik.puml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/danyl/GuiScreen/MyButton.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Cell.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Cell.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Direction.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Direction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/DrawUtils.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/DrawUtils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Game.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Game.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/GameBoard.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/GameBoard.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Keyboard.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Keyboard.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Start.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Start.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/GuiPanel.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/GuiPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/GuiScreen.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/GuiScreen.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/Cell.java" afterPath="$PROJECT_DIR$/src/danyl/Game/Cell.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/Direction.java" afterPath="$PROJECT_DIR$/src/danyl/Game/Direction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/DrawUtils.java" afterPath="$PROJECT_DIR$/src/danyl/Game/DrawUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/Game.java" afterPath="$PROJECT_DIR$/src/danyl/Game/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/GameBoard.java" afterPath="$PROJECT_DIR$/src/danyl/Game/GameBoard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/Keyboard.java" afterPath="$PROJECT_DIR$/src/danyl/Game/Keyboard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/Point.java" afterPath="$PROJECT_DIR$/src/danyl/Game/Point.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/Start.java" afterPath="$PROJECT_DIR$/src/danyl/Game/Start.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/GuiScreen/GuiPanel.java" afterPath="$PROJECT_DIR$/src/danyl/GuiScreen/GuiPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java" afterPath="$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/GuiScreen/State.java" afterPath="$PROJECT_DIR$/src/danyl/GuiScreen/State.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,11 +55,85 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Cell.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/danyl/Game/Cell.java">
+      <file leaf-file-name="GameBoard.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/danyl/Game/GameBoard.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="50" column="32" lean-forward="false" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Rules.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/danyl/Game/Rules.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Scores" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Scores">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RESULTS.tmp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/RESULTS.tmp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RulesPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/RulesPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="54" column="45" lean-forward="false" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayPanel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/PlayPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/Menu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="311">
+              <caret line="51" column="11" lean-forward="false" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sound.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/danyl/Game/Sound.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1445">
+              <caret line="101" column="17" lean-forward="false" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -53,11 +146,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
         <option value="UML Class" />
         <option value="UML Use Case" />
         <option value="UML Component" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -80,24 +173,44 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/danyl/Game/DrawUtils.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/P/Point.java" />
-        <option value="$PROJECT_DIR$/src/danyl/Game/Point.java" />
-        <option value="$PROJECT_DIR$/src/danyl/Game/Start.java" />
         <option value="$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/game/DrawUtils.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/ScoreManager.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/mm.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/Audio.java" />
-        <option value="$PROJECT_DIR$/src/danyl/Game/GameBoard.java" />
         <option value="$PROJECT_DIR$/src/danyl/GuiScreen/GuiPanell.java" />
-        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/GuiPanel.java" />
-        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/State.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/Direction.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Scores.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Point.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/DrawUtils.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/Keyboard.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/PlayPanell.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/MainMenuPanel.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/LeaderboardsPanel.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/State.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Keys.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Gamee.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Start.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreenn.java" />
         <option value="$PROJECT_DIR$/src/danyl/GuiScreen/MyButton.java" />
-        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java" />
-        <option value="$PROJECT_DIR$/src/danyl/Game/Game.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/fefe.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/Cell.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/AudioHandler.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Sound.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Score.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Leaders.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/GuiButton.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/LeadersPanel.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/GuiPanel.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Rules.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/Menu.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Game.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/RulesPanel.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/GameBoard.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/PlayPanel.java" />
+        <option value="$PROJECT_DIR$/Scores" />
+        <option value="$PROJECT_DIR$/RESULTS.tmp" />
       </list>
     </option>
   </component>
@@ -122,9 +235,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,44 +244,21 @@
               <item name="2048-Project" type="b2602c69:ProjectViewProjectNode" />
               <item name="2048-Project" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="2048-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2048-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2048-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2048-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="danyl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2048-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2048-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="danyl" type="462c0819:PsiDirectoryNode" />
-              <item name="Game" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="2048-Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="2048-Project" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="danyl" type="462c0819:PsiDirectoryNode" />
-              <item name="GuiScreen" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SearchEverywhereHistoryKey" value="rand&#9;PSI&#9;JAVA://danyl.Game.GameBoard#randomValue&#10;setBest&#9;PSI&#9;JAVA://danyl.Game.Score#setBestTime&#10;dr&#9;FILE&#9;file://E:/Универ/Java/2 Course/Курсач_2048/2048-Project/src/danyl/Game/DrawUtils.java" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -192,15 +281,15 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="danyl.Game.Start" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="2048-Project" />
+      <module name="2048" />
       <envs />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -293,6 +382,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="b5ca9485-793d-42be-a868-f64f23431a44" name="Default" comment="" />
@@ -309,29 +401,29 @@
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329296" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32820514" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15897048" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22407266" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981076" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39967105" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3982906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329296" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -341,109 +433,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Direction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/DrawUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" column="89" lean-forward="false" selection-start-line="13" selection-start-column="89" selection-end-line="13" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/GameBoard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1326">
-          <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Keyboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../2048-master/src/ru/timurnav/Direction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../2048-master/src/ru/timurnav/GameLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="57" lean-forward="true" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="747" column="0" lean-forward="false" selection-start-line="747" selection-start-column="0" selection-end-line="747" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/DrawUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/game/Game.java" />
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/game/Keys.java" />
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/game/Point.java" />
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/game/Start.java" />
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/game/Tile.java" />
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/game/AudioHandler.java" />
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/game/Leaderboards.java" />
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/gui/GuiPanel.java" />
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/gui/GuiScreen.java" />
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/gui/GuiButton.java" />
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/gui/LeaderboardsPanel.java" />
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/gui/MainMenuPanel.java" />
-    <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/game/DrawUtils.java" />
     <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/gui/PlayPanel.java" />
     <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/game/GameBoard.java" />
     <entry file="file://$USER_HOME$/Downloads/2048-Final/2048-Final/src/com/fatalcubez/game/ScoreManager.java" />
@@ -480,10 +474,27 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/danyl/Game/hghh.java" />
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Audio.java">
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/fnjfeiei.java" />
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/2048.puml" />
+    <entry file="file://$PROJECT_DIR$/src/oko.puml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="true" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/kik.puml" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_151/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="579" column="0" lean-forward="false" selection-start-line="579" selection-start-column="0" selection-end-line="579" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -494,71 +505,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Keyboard.java">
+    <entry file="file://$PROJECT_DIR$/SavingData.txt.txt" />
+    <entry file="file://$PROJECT_DIR$/SavingData.tmp" />
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="24" column="18" lean-forward="false" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="false" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/State.java">
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/PlayPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        <state relative-caret-position="401">
+          <caret line="142" column="13" lean-forward="true" selection-start-line="142" selection-start-column="13" selection-end-line="142" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/fnjfeiei.java" />
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/MyButton.java">
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/MainMenuPanel.java" />
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/LeaderboardsPanel.java" />
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="52" column="9" lean-forward="false" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="9" />
+        <state relative-caret-position="401">
+          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1800#1801#0" expanded="false" />
-            <element signature="e#1851#1852#0" expanded="false" />
-            <element signature="e#2841#2842#0" expanded="false" />
-            <element signature="e#2877#2878#0" expanded="false" />
-            <element signature="e#2906#2907#0" expanded="false" />
-            <element signature="e#2942#2943#0" expanded="false" />
-            <element signature="e#2975#2976#0" expanded="false" />
-            <element signature="e#3014#3015#0" expanded="false" />
-            <element signature="e#3048#3049#0" expanded="false" />
-            <element signature="e#3089#3090#0" expanded="false" />
-            <element signature="e#3139#3140#0" expanded="false" />
-            <element signature="e#3177#3178#0" expanded="false" />
+            <element signature="e#993#994#0" expanded="false" />
+            <element signature="e#1033#1034#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/2048.puml">
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/GameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="230">
+          <caret line="197" column="53" lean-forward="true" selection-start-line="197" selection-start-column="53" selection-end-line="197" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/oko.puml">
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Gameee.java" />
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/fefe.java" />
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Start.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="119">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/kik.puml">
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Keys.java" />
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/MyButton.java" />
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/State.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="41" lean-forward="false" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="61" column="9" lean-forward="false" selection-start-line="61" selection-start-column="9" selection-end-line="61" selection-end-column="9" />
+          <folding>
+            <element signature="e#993#994#0" expanded="false" />
+            <element signature="e#1033#1034#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Keyboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="188" column="1" lean-forward="true" selection-start-line="188" selection-start-column="1" selection-end-line="188" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Leaders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="24" column="30" lean-forward="true" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/LeadersPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="99" column="24" lean-forward="false" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/DrawUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/danyl/Game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+        <state relative-caret-position="311">
+          <caret line="174" column="1" lean-forward="true" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -567,41 +642,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/danyl/Game/GameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="543" column="5" lean-forward="false" selection-start-line="543" selection-start-column="5" selection-end-line="543" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="50" column="32" lean-forward="false" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/RulesPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="5" lean-forward="false" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="816">
+          <caret line="54" column="45" lean-forward="false" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Cell.java">
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Sound.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="1445">
+          <caret line="101" column="17" lean-forward="false" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/PlayPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="86" column="0" lean-forward="false" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="51" column="11" lean-forward="false" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Rules.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="24" column="11" lean-forward="true" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Scores">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RESULTS.tmp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -611,12 +716,11 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>2048</last-edited>
+          <last-edited>2048-Project:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
@@ -659,12 +763,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>2048-Project</last-edited>
+          <last-edited>2048</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

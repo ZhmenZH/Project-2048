@@ -43,8 +43,8 @@ public class Keyboard {
         }
     }
 
-    public static boolean typed(int KeyEvent)
-    {
-        return !pressed[KeyEvent] && prev[KeyEvent];
-    }
+//    public static boolean typed(int KeyEvent)
+//    {
+//        return !pressed[KeyEvent] && prev[KeyEvent];
+//    }
 }

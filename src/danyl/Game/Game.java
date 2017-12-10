@@ -1,25 +1,29 @@
 package danyl.Game;
 
-import danyl.GuiScreen.GuiScreen;
+import danyl.GuiScreen.*;
 
 import javax.swing.*;
-import java.awt.*;
-import java.awt.event.*;
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Font;
+import java.awt.Graphics2D;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.event.MouseMotionListener;
 import java.awt.image.BufferedImage;
 
-public class Game extends JPanel implements KeyListener,MouseMotionListener,MouseListener, Runnable {
+public class Game extends JPanel implements Runnable, KeyListener,MouseMotionListener,MouseListener{
 
+   // private static final long serialVersionUID = 1L;
     public static final int WIDTH = 500;
-    public static final int HEIGHT = 600;
-    public static final Font font = new Font("", Font.ITALIC, 32);
+    public static final int HEIGHT = 630;
+    public static final Font font = new Font("", Font.ITALIC, 30);
     BufferedImage image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_INT_RGB);
-    //font
     private Thread game;
     private boolean running;
-
-    private long starttime;
-    private long elapsedtime;
-    private boolean set;
 
     private GuiScreen screen;
 
@@ -31,35 +35,59 @@ public class Game extends JPanel implements KeyListener,MouseMotionListener,Mous
         addMouseMotionListener(this);
 
         screen = GuiScreen.getInstance();
+        screen.add("Menu",new Menu());
+        screen.add("Play",new PlayPanel());
+        screen.add("Scores", new LeadersPanel());
+        screen.add("Rules",new RulesPanel());
+        screen.setActualPanel("Menu");
+    }
+
+    private void render() {
+        Graphics2D graphics = (Graphics2D) image.getGraphics();
+        graphics.setColor(Color.white);
+        graphics.fillRect(0, 0, WIDTH, HEIGHT);
+        screen.render(graphics);
+        graphics.dispose();
+
+        Graphics2D graphics2D = (Graphics2D) getGraphics();
+        graphics2D.drawImage(image, 0, 0, null);
+        graphics2D.dispose();
+    }
+
+    private void update() {
+        screen.update();
+        Keyboard.update();
     }
 
     @Override
     public void run() {
-        int fps = 0;
-        int updates = 0;
+        int fps = 0, updates = 0;
         long fpsTimer = System.currentTimeMillis();
         double nsPerUpdate = 1000000000.0 / 60;
 
-        //last update time in nanoces
-
+        // last update time in nanoseconds
         double then = System.nanoTime();
         double unprocessed = 0;
 
         while (running) {
+
             boolean shouldRender = false;
 
             double now = System.nanoTime();
             unprocessed += (now - then) / nsPerUpdate;
             then = now;
-            //update queueu
+
+            // Update queue
             while (unprocessed >= 1) {
+
+                // update
                 updates++;
                 update();
                 unprocessed--;
                 shouldRender = true;
             }
 
-            //render
+            // Render
             if (shouldRender) {
                 fps++;
                 render();
@@ -68,20 +96,19 @@ public class Game extends JPanel implements KeyListener,MouseMotionListener,Mous
             else {
                 try {
                     Thread.sleep(1);
-                } catch (InterruptedException e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
             }
-        }
 
-        //fps timer
-        if (System.currentTimeMillis() - fpsTimer > 1000) {
-            System.out.printf("%d fps %d updates", fps, updates);
-            System.out.println();
-            fps = 0;
-            updates = 0;
-            fpsTimer += 1000;
-
+            // FPS timer
+            if (System.currentTimeMillis() - fpsTimer > 1000) {
+                System.out.printf("%d fps %d updates", fps, updates);
+                System.out.println("");
+                fps = 0;
+                updates = 0;
+                fpsTimer += 1000;
+            }
         }
     }
 
@@ -100,30 +127,8 @@ public class Game extends JPanel implements KeyListener,MouseMotionListener,Mous
         System.exit(0);
     }
 
-    private void render() {
-        Graphics2D graphics = (Graphics2D)
-                image.getGraphics();
-        graphics.setColor(Color.white);
-        graphics.fillRect(0, 0, WIDTH, HEIGHT);
-        screen.render(graphics);
-
-        graphics.dispose();
-
-        Graphics2D graphics2D = (Graphics2D) getGraphics();
-        graphics2D.drawImage(image, 0, 0, null);
-        graphics2D.dispose();
-    }
-
-    public void update() {
-        screen.update();
-        Keyboard.update();
-    }
-
-    //RULES
-
     @Override
     public void keyTyped(KeyEvent e) {
-
     }
 
     @Override
@@ -138,7 +143,6 @@ public class Game extends JPanel implements KeyListener,MouseMotionListener,Mous
 
     @Override
     public void mouseClicked(MouseEvent e) {
-
     }
 
     @Override
@@ -148,17 +152,15 @@ public class Game extends JPanel implements KeyListener,MouseMotionListener,Mous
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        screen.mouseRealeased(e);
+        screen.mouseReleased(e);
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-
     }
 
     @Override

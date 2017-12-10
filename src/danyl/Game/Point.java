@@ -10,24 +10,4 @@ public class Point {
         this.row = row;
         this.col = col;
     }
-
-//    public void setRow(int row)
-//    {
-//        this.row = row;
-//    }
-//
-//    public int getRow(int row)
-//    {
-//        return row;
-//    }
-//
-//    public void setCol(int col)
-//    {
-//        this.col = col;
-//    }
-//
-//    public int getCol(int col)
-//    {
-//        return col;
-//    }
 }

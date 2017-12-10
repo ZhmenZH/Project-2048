@@ -1,10 +1,12 @@
 package danyl.Game;
 
+import danyl.GuiScreen.GuiScreen;
+
+import javax.sound.sampled.Clip;
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
-import java.io.*;
-import java.net.URISyntaxException;
+import java.io.File;
 import java.util.Random;
 
 public class GameBoard {
@@ -17,108 +19,101 @@ public class GameBoard {
     private boolean won;
     private boolean lost;
     private BufferedImage gameboard;
-    private BufferedImage finalboard;
     private int x,y;
 
-    private int score = 0;
-    private int highscore = 0;
-    private Font scoreFont;
-
     private long pastTime;
-    private long thefastestTime;
     private long startTime;
-    private String formattedTime = "00:00:000";
     private boolean hasStarted;
-
-    //Saving
-    private String saveData;
-    private String filename = "SaveData";
+    private int saveCount = 0;
 
     private static int SPACING = 10;//растояние
     public static int BOARD_WIDTH = (COLS + 1) * SPACING + COLS * Cell.WIDTH;
     public static int BOARD_HEIGHT = (ROWS + 1) * SPACING + ROWS * Cell.HEIGHT;
 
+    private Sound audio;
+    private Sound audioMove;
+    private Score scores;
+    private Leaders leaders;
+
+    private GuiScreen screen;
+
     public GameBoard(int x,int y)
     {
-        try {
-            saveData = GameBoard.class.getProtectionDomain().getCodeSource().getLocation().toURI().getPath();
-            // saveData = System.getProperty("user.home") + "foldername";
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
-        }
-
-        scoreFont = Game.font.deriveFont(20f);
         this.x = x;
         this.y = y;
         board = new Cell[ROWS][COLS];
         gameboard = new BufferedImage(BOARD_WIDTH,BOARD_HEIGHT,BufferedImage.TYPE_INT_RGB);
-        finalboard = new BufferedImage(BOARD_WIDTH,BOARD_HEIGHT,BufferedImage.TYPE_INT_RGB);
-        startTime = System.nanoTime();
-
-        loadHighScore();
+        screen = GuiScreen.getInstance();
         createBoardImage();
-        initiallyNumbers();
-    }
+        initiallyValues();
 
-    public void createSaveData()
-    {
-        try {
-        File file = new File(saveData,filename);
+        audioMove = new Sound(new File("move.wav"));
+        audioMove.setVolume(0.65f);
 
-        FileWriter output = new FileWriter(file);
-        BufferedWriter writer = new BufferedWriter(output);
-        writer.write("" + 0);
-        writer.newLine();
-        writer.write("" + Integer.MAX_VALUE);
-        writer.close();
-
-        } catch (IOException e) {
-            e.printStackTrace();
+        leaders = Leaders.getInstance();
+        leaders.loadScores();
+        scores = new Score(this);
+        scores.loadGame();
+        scores.setBestTime(leaders.getTheFastestTime());
+        scores.setBestScore(leaders.getHighScore());
+        if(scores.newGame())
+        {
+            scores.saveGame();
+        }
+        else {
+            for (int i = 0; i < scores.getBoard().length; i++) {
+                if(scores.getBoard()[i] == 0) continue;
+                spawn(i/ROWS, i % COLS,scores.getBoard()[i]);
+           }
+            lost = checkLose();
+            won = checkWon();
         }
     }
 
-    private void loadHighScore()
+    public void reset()
     {
-        try {
-            File file = new File(saveData,filename);
-            if(!file.isFile())
-            {
-                createSaveData();
-            }
+        board = new Cell[ROWS][COLS];
+        initiallyValues();
+        scores.saveGame();
+        lost = false;
+        won = false;
+        hasStarted = false;
+        startTime = System.nanoTime();
+        pastTime = 0;
+        saveCount = 0;
+    }
 
-            BufferedReader reader = new BufferedReader(new InputStreamReader(new FileInputStream(file)));
-            highscore = Integer.parseInt(reader.readLine());
-//          thefastestTime = Long.parseLong(reader.readLine());
-            reader.close();
-        } catch (IOException e) {
-            e.printStackTrace();
+    private void spawn(int row, int col,int value)
+    {
+        board[row][col] = new Cell(value,getCellX(col),getCellY(row));
+    }
+
+    private void initiallyValues()
+    {
+        for(int i = 0; i < begin_cells; i ++)
+        {
+            randomValue();
         }
     }
 
-    private void setHighScore()
+    private void randomValue()
     {
-        FileWriter output = null;
+        Random random = new Random();
+        boolean notValid = true;
 
-        try{
-            File file = new File(saveData,filename);
-            output = new FileWriter(file);
-            BufferedWriter writer = new BufferedWriter(output);
-            writer.write("" + highscore);
-            writer.newLine();
-
-            if(pastTime <= thefastestTime && won)
+        while(notValid)
+        {
+            int location = random.nextInt(16);
+            int row = location / ROWS;
+            int col = location % COLS;
+            Cell currentlocation = board[row][col];
+            if(currentlocation == null)
             {
-               writer.write("" + pastTime);
+                int value = random.nextInt(10) < 9 ? 2 : 4;
+                Cell cell = new Cell(value,getCellX(col),getCellY(row));
+                board[row][col] = cell;
+                notValid = false;
             }
-            else{
-                writer.write("" + thefastestTime);
-            }
-
-            writer.close();
-
-        } catch (IOException e) {
-        e.printStackTrace();
-
         }
     }
 
@@ -141,49 +136,13 @@ public class GameBoard {
         }
     }
 
-    private void initiallyNumbers()
-    {
-        for(int i = 0; i < begin_cells; i ++)
-        {
-            randomValue();
-        }
-    }
-
-    private void randomValue()
-    {
-        Random random = new Random();
-        boolean notValid = true;
-
-        while(notValid)
-        {
-            int location = random.nextInt(ROWS * COLS);
-            int row = location / ROWS;
-            int col = location % COLS;
-            Cell currentlocation = board[row][col];
-            if(currentlocation == null)
-            {
-                int value = random.nextInt(10) < 9 ? 2 : 4;
-                Cell cell = new Cell(value,getCellX(col),getCellY(row));
-                board[row][col] = cell;
-                notValid = false;
-            }
-        }
-    }
-
-    public int getCellX(int col)
-    {
-        return SPACING + col*Cell.WIDTH + col*SPACING;
-    }
-
-    public int getCellY(int row)
-    {
-        return SPACING + row * Cell.HEIGHT + row*SPACING;
-    }
-
     public void render(Graphics2D graphics)
     {
+        BufferedImage finalboard = new BufferedImage(BOARD_WIDTH, BOARD_HEIGHT, BufferedImage.TYPE_INT_ARGB);
         Graphics2D graphics2D = (Graphics2D)
-        finalboard.getGraphics();
+                finalboard.getGraphics();
+        graphics2D.setColor(new Color(0, 0, 0, 0));
+        graphics2D.fillRect(0, 0, BOARD_WIDTH, BOARD_HEIGHT);
         graphics2D.drawImage(gameboard,0,0,null);
 
         for(int row = 0; row<ROWS; row++)
@@ -198,31 +157,22 @@ public class GameBoard {
 
         graphics.drawImage(finalboard,x,y,null);
         graphics2D.dispose();
-
-        graphics.setColor(Color.BLACK);
-        graphics.setFont(scoreFont);
-        graphics.drawString("Score: " + score,30,40);
-        graphics.setColor(Color.RED);
-        graphics.setFont(scoreFont);
-        graphics.drawString("Highscore: " + highscore,
-                Game.WIDTH - DrawUtils.getMessageWidth("Highscore " + highscore,scoreFont,graphics) - 20,40);
-
-        graphics.drawString("Time: " + formattedTime,30,90);
-        graphics.setColor(Color.RED);
-        graphics.drawString("Highscore: " + thefastestTime,
-                Game.WIDTH - DrawUtils.getMessageWidth
-                        ("Highscore" + thefastestTime, scoreFont, graphics)-60,
-                90);
     }
 
     public void update()
     {
+        saveCount++;
+        if(saveCount >= 120)
+        {
+            saveCount = 0;
+            scores.saveGame();
+        }
         if(!won && !lost)
         {
             if(hasStarted)
             {
                 pastTime = (System.nanoTime() - startTime) / 1000000;
-                formattedTime = toFormatTime(pastTime);
+                scores.setTime(pastTime);
             }
             else {
                 startTime = System.nanoTime();
@@ -231,115 +181,110 @@ public class GameBoard {
 
         checkKeys();
 
-        if(score >= highscore)
+        if(scores.getActualScore() > scores.getBestScore())
         {
-            highscore = score;
+            scores.setBestScore(scores.getActualScore());
+        }
+
+        if(scores.getTime() > scores.getBestTime())
+        {
+            scores.setBestTime(scores.getTime());
         }
 
         for(int row = 0; row<ROWS; row++)
         {
-          for(int col = 0; col<COLS; col++)
-          {
-            Cell currentlocation = board[row][col];
-            if(currentlocation == null) continue;
-            currentlocation.update();
-
-            resetPosition(currentlocation,row,col);
-
-            if(currentlocation.getValue() == 2048)
+            for(int col = 0; col<COLS; col++)
             {
-                won = true;
+                Cell currentlocation = board[row][col];
+                if(currentlocation == null) continue;
+                currentlocation.update();
+
+                resetPosition(currentlocation,row,col);
+
+                if(currentlocation.getValue() == 2048)
+                {
+                    setWon(true);
+                }
             }
-          }
         }
     }
 
-    private String toFormatTime(long millis) {
-        String formattedTime = "";
-
-        int hours = (int) (millis / 3600000);
-        if (hours >= 1) {
-            millis -= hours * 3600000;
-            formattedTime += hours + ":";
-        }
-
-        int minutes = (int) (millis / 60000);
-        if (minutes >= 1) {
-            millis -= minutes * 60000;
-            if (minutes < 10) {
-                formattedTime += "0" + minutes + ":";
-            }
-            else {
-                formattedTime += minutes + ":";
-            }
-        }
-
-        int seconds = (int) (millis / 1000);
-        if (seconds >= 1) {
-            millis -= seconds * 1000;
-            if (seconds < 10) {
-                formattedTime += "0" + seconds + ":";
-            }
-            else {
-                formattedTime += seconds + ":";
-            }
-        }
-
-        if (millis > 99) {
-            formattedTime += millis;
-        }
-        else if (millis > 9) {
-            formattedTime += "0" + millis;
-        }
-        else {
-            formattedTime += "00" + millis;
-        }
-
-        return formattedTime;
-    }
-
-
-    private void resetPosition(Cell currentlocation, int row, int col)
+    private void resetPosition(Cell cell, int row, int col)
     {
-        if(currentlocation == null) return;
+        if(cell == null) return;
 
         int x = getCellX(col);
         int y = getCellY(row);
-        int distanceX = currentlocation.getX() - x;
-        int distanceY = currentlocation.getY() - y;
+        int distanceX = cell.getX() - x;
+        int distanceY = cell.getY() - y;
 
         if(Math.abs(distanceX) < Cell.SLIP_SPEED)
         {
-            currentlocation.setX(currentlocation.getX() - distanceX);
+            cell.setX(cell.getX() - distanceX);
         }
 
         if(Math.abs(distanceY) < Cell.SLIP_SPEED)
         {
-            currentlocation.setY(currentlocation.getY() - distanceY);
+            cell.setY(cell.getY() - distanceY);
         }
 
         if(distanceX < 0)
         {
-            currentlocation.setX(currentlocation.getX() + Cell.SLIP_SPEED);
+            cell.setX(cell.getX() + Cell.SLIP_SPEED);
         }
 
         if(distanceY < 0)
         {
-            currentlocation.setY(currentlocation.getY() + Cell.SLIP_SPEED);
+            cell.setY(cell.getY() + Cell.SLIP_SPEED);
         }
 
         if(distanceX > 0)
         {
-            currentlocation.setX(currentlocation.getX() - Cell.SLIP_SPEED);
+            cell.setX(cell.getX() - Cell.SLIP_SPEED);
         }
 
         if(distanceY > 0)
         {
-            currentlocation.setY(currentlocation.getY() - Cell.SLIP_SPEED);
+            cell.setY(cell.getY() - Cell.SLIP_SPEED);
         }
     }
 
+    public int getCellX(int col)
+    {
+        return SPACING + col * Cell.WIDTH + col * SPACING;
+    }
+
+    public int getCellY(int row)
+    {
+        return SPACING + row * Cell.HEIGHT + row * SPACING;
+    }
+
+    private boolean checkOutOfFrame(Direction direction,int row, int col)
+    {
+        if(direction == Direction.LEFT)
+        {
+            return col < 0;
+        }
+
+        else if(direction == Direction.RIGHT)
+        {
+            return col > COLS - 1;
+        }
+
+        else if(direction == Direction.UP)
+        {
+            return row < 0;
+        }
+
+        else if(direction == Direction.DOWN)
+        {
+            return row > ROWS - 1;
+        }
+        return false;
+    }
+
     private void moveCells(Direction direction) {
+        audioMove.play(true);
         boolean canMove = false;
         int horizontal_direction = 0;
         int vertical_direction = 0;
@@ -417,16 +362,14 @@ public class GameBoard {
         if(canMove)
         {
             randomValue();
-            checkLose();
+            setLost(checkLose());
         }
     }
 
     private boolean move(int row, int col,int horizontalDirection, int verticalDirection,Direction direction)
     {
         boolean canMove = false;
-
         Cell currentlocation = board[row][col];
-
         if(currentlocation == null) {
             return false;
         }
@@ -443,11 +386,10 @@ public class GameBoard {
             if(board[newRow][newCol] == null)
             {
                 board[newRow][newCol] = currentlocation;
+                canMove = true;
                 board[newRow - verticalDirection][newCol - horizontalDirection] = null;
                 board[newRow][newCol].setSlipTo(new Point(newRow,newCol));
-                canMove = true;
             }
-
             else if(board[newRow][newCol].getValue() == currentlocation.getValue() && board[newRow][newCol].isCanCombine())
             {
                 board[newRow][newCol].setCanCombine(false);
@@ -456,7 +398,7 @@ public class GameBoard {
                 board[newRow - verticalDirection][newCol - horizontalDirection] = null;
                 board[newRow][newCol].setSlipTo(new Point(newRow,newCol));
                 board[newRow][newCol].setCombineAnimation(true);
-                score += board[newRow][newCol].getValue();
+                scores.setActualScore(scores.getActualScore() + board[newRow][newCol].getValue());
             }
             else {
                 move = false;
@@ -465,50 +407,35 @@ public class GameBoard {
         return canMove;
     }
 
-    private boolean checkOutOfFrame(Direction direction,int row, int col)
-    {
-        if(direction == Direction.LEFT)
-        {
-            return col < 0;
-        }
-
-        else if(direction == Direction.RIGHT)
-        {
-            return col > COLS - 1;
-        }
-
-        else if(direction == Direction.UP)
-        {
-            return row < 0;
-        }
-
-        else if(direction == Direction.DOWN)
-        {
-            return row > ROWS - 1;
-        }
-        return false;
-    }
-
-    private void checkLose()
+    private boolean checkLose()
     {
         for(int row = 0; row < ROWS; row++){
             for(int col = 0; col < COLS; col++)
             {
-                if(board[row][col] == null)
-                    return;
-                if(checkSurroundingCells(row,col,board[row][col]))
+                if(board[row][col] == null) {
+                    return false;
+                }
+                boolean canCombine = checkSurroundingCells(row,col,board[row][col]);
+                if(canCombine)
                 {
-                    return;
+                    return false;
                 }
             }
         }
+        return true;
+    }
 
-        lost = true;
-//        if(score >= highscore)
-//        {
-//            highscore = score;
-//        }
-        setHighScore();
+    private boolean checkWon() {
+        for (int row = 0; row < ROWS; row++) {
+            for (int col = 0; col < COLS; col++)
+            {
+                if(board[row][col] == null)
+                    continue;
+                if(board[row][col].getValue() >= 2048)
+                    return true;
+            }
+        }
+        return false;
     }
 
     private boolean checkSurroundingCells(int row, int col, Cell currentlocation)
@@ -540,29 +467,85 @@ public class GameBoard {
             if(check == null) return true;
             if(currentlocation.getValue() == check.getValue()) return true;
         }
-        return  false;
+        return false;
     }
 
     private void checkKeys() {
-        if (Keyboard.typed(KeyEvent.VK_LEFT)) {
+        if (!Keyboard.pressed[KeyEvent.VK_LEFT] && Keyboard.prev[KeyEvent.VK_LEFT]) {
             moveCells(Direction.LEFT);
-            if(!hasStarted)
-                hasStarted = true;
+            if (!hasStarted) hasStarted = !lost;
+            //else if
         }
-        if (Keyboard.typed(KeyEvent.VK_RIGHT)) {
+        if (!Keyboard.pressed[KeyEvent.VK_RIGHT] && Keyboard.prev[KeyEvent.VK_RIGHT]) {
             moveCells(Direction.RIGHT);
-            if(!hasStarted)
-                hasStarted = true;
+            if (!hasStarted) hasStarted = !lost;
         }
-        if (Keyboard.typed(KeyEvent.VK_UP)) {
+        if (!Keyboard.pressed[KeyEvent.VK_UP] && Keyboard.prev[KeyEvent.VK_UP]) {
             moveCells(Direction.UP);
-            if(!hasStarted)
-                hasStarted = true;
+            if (!hasStarted) hasStarted = !lost;
         }
-        if (Keyboard.typed(KeyEvent.VK_DOWN)) {
+        if (!Keyboard.pressed[KeyEvent.VK_DOWN] && Keyboard.prev[KeyEvent.VK_DOWN]) {
             moveCells(Direction.DOWN);
-            if(!hasStarted)
-                hasStarted = true;
+            if (!hasStarted) hasStarted = !lost;
         }
+    }
+
+    public boolean isLost()
+    {
+        return lost;
+    }
+
+    public void setLost(boolean lost)
+    {
+        if(!this.lost && lost)
+        {
+            leaders.addScore(scores.getActualScore());
+            //leaders.addTime(scores.getTime());
+            leaders.saveScores();
+            audioMove.stop();
+        }
+        this.lost = lost;
+    }
+
+    public Cell[][] getBoard()
+    {
+        return board;
+    }
+
+    public boolean isWon()
+    {
+        return won;
+    }
+
+    public void  setWon(boolean won)
+    {
+        if(!this.won && won && !lost)
+        {
+            leaders.addTime(scores.getTime());
+
+            leaders.saveScores();
+        }
+        this.won = won;
+    }
+
+    public Score getScores()
+    {
+        return scores;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public void setY(int y) {
+        this.y = y;
     }
 }

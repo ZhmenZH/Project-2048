@@ -1,73 +1,59 @@
 package danyl.GuiScreen;
 
-import java.awt.*;
+import javax.swing.*;
 import java.awt.event.MouseEvent;
+import java.awt.Graphics2D;
 import java.util.ArrayList;
 
-public class GuiPanel {
+public class GuiPanel extends JPanel{
 
-    private ArrayList <MyButton> buttons;
+    private ArrayList<GuiButton> buttons;
 
-    public GuiPanel()
-    {
-        buttons = new ArrayList<MyButton>();
+    public GuiPanel(){
+        buttons = new ArrayList<GuiButton>();
     }
 
-    public void update()
-    {
-        for(MyButton but: buttons)
-        {
-            but.update();
+    public void update(){
+        for(GuiButton b : buttons){
+            b.update();
         }
     }
 
-    public void render(Graphics2D graphics2D)
-    {
-        for(MyButton but: buttons)
-        {
-            but.render(graphics2D);
+    public void render(Graphics2D g){
+        for(GuiButton b : buttons){
+            b.render(g);
         }
     }
 
-    public void addButton(MyButton button)
-    {
+    public void addButton(GuiButton button){
         buttons.add(button);
     }
 
-    public void removeButton(MyButton button)
-    {
+    public void removeButton(GuiButton button){
         buttons.remove(button);
     }
 
-    public void mousePressed(MouseEvent me)
-    {
-        for(MyButton but: buttons)
-        {
-            but.mousePressed(me);
+    public void mousePressed(MouseEvent e){
+        for(GuiButton b : buttons){
+            b.mousePressed(e);
         }
     }
 
-    public void mouseRealeased(MouseEvent me)
-    {
-        for(MyButton but: buttons)
-        {
-            but.mouseReleased(me);
+   public void mouseReleased(MouseEvent e){
+        for(GuiButton b : buttons){
+            b.mouseReleased(e);
         }
     }
 
-    public void mouseMoved(MouseEvent me)
-    {
-        for(MyButton but: buttons)
-        {
-            but.mouseMoved(me);
+    public void mouseDragged(MouseEvent e){
+        for(GuiButton b : buttons){
+            b.mouseDragged(e);
         }
     }
 
-    public void mouseDragged(MouseEvent me)
-    {
-        for(MyButton but: buttons)
-        {
-            but.mouseDragged(me);
+    public void mouseMoved(MouseEvent e){
+        for(GuiButton b : buttons){
+            b.mouseMoved(e);
         }
     }
 }
