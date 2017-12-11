@@ -1,7 +1,9 @@
 package danyl.Game;
 
+import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
@@ -20,6 +22,7 @@ public class Sound {
 
     public Sound(File f) {
         try {
+//            InputStream bufferedIn = new BufferedInputStream(f);
             AudioInputStream stream = AudioSystem.getAudioInputStream(f);
             clip = AudioSystem.getClip();
             clip.open(stream);
@@ -105,13 +108,13 @@ public class Sound {
         }
     }
 
-    //Статический метод, для удобства
-    public static Sound playSound(String s) {
-        File f = new File(s);
-        Sound snd = new Sound(f);
-        snd.play();
-        return snd;
-    }
+//    //Статический метод, для удобства
+//    public static Sound playSound(String s) {
+//        File f = new File(s);
+//        Sound snd = new Sound(b);
+//        snd.play();
+//        return snd;
+//    }
 
     private class Listener implements LineListener {
         public void update(LineEvent ev) {

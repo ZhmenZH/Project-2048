@@ -47,7 +47,7 @@ public class RulesPanel extends GuiPanel {
 
     private void showRules(Graphics2D graphics2D)
     {
-        graphics2D.setColor(Color.darkGray);
+        graphics2D.setColor(Color.black);
         graphics2D.setFont(rulesFont);
         graphics2D.drawString(rules1,10,120);
         graphics2D.drawString(rules2,10,150);

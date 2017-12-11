@@ -17,11 +17,9 @@ public class PlayPanel extends GuiPanel {
     private Score scores;
     private Font scoreFont;
     private String toFormatTime;
-    private String bestTimeFormat;
 
     private GuiButton tryagain;
     private GuiButton menu;
-    private GuiButton keepGoing;
     private GuiButton gameboardMenu;
     private GuiButton newGame;
     private GuiButton music;
@@ -40,20 +38,17 @@ public class PlayPanel extends GuiPanel {
     private Sound audioLost;
     private Sound audio;
 
-    private GameBoard df;
-
-//ERROR is HERE!!!
     public PlayPanel()
     {
-        audio = new Sound(new File("musicMenu1.wav"));
+        audio = new Sound(new File("musicMenu.wav"));
         audio.play(true);
-        audio.setVolume(0.65f);
+        audio.setVolume(0.4f);
 
         audioLost = new Sound(new File("lost.wav"));
         scoreFont = Game.font.deriveFont(20f);
 
         gameOverFont = Game.font.deriveFont(90f);
-        winnerFont = Game.font.deriveFont(70f);
+        winnerFont = Game.font.deriveFont(20f);
 
         board = new GameBoard(Game.WIDTH/2 - GameBoard.BOARD_WIDTH/2,Game.HEIGHT - GameBoard.BOARD_HEIGHT - 20);
         scores = board.getScores();
@@ -67,7 +62,6 @@ public class PlayPanel extends GuiPanel {
 
         menu = new GuiButton(Game.WIDTH/2 - largeButtonWidth/2,450,largeButtonWidth,buttonHeight);
         tryagain = new GuiButton(menu.getX(),menu.getY() - spacing - buttonHeight,largeButtonWidth,buttonHeight);
-        keepGoing = new GuiButton(tryagain.getX(),tryagain.getY() - spacing - buttonHeight,largeButtonWidth,buttonHeight);
 
         music.setMessage("Music");
         musicOn.setMessage("On");
@@ -75,7 +69,6 @@ public class PlayPanel extends GuiPanel {
         newGame.setMessage("New Game");
         gameboardMenu.setMessage("Menu");
         tryagain.setMessage("Try Again");
-        keepGoing.setMessage("Keep Going");
         menu.setMessage("Back to Main Menu");
 
         musicOn.addActionListener(new ActionListener() {
@@ -110,11 +103,8 @@ public class PlayPanel extends GuiPanel {
         tryagain.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                System.out.println("1");
                 board.getScores().reset();
-                System.out.println("2");
                 board.reset();
-                System.out.println("3");
                 alpha = 0;
                 addButton(gameboardMenu);
                 addButton(newGame);
@@ -122,19 +112,10 @@ public class PlayPanel extends GuiPanel {
                 addButton(musicOn);
                 addButton(musicOff);
 
-                System.out.println("4");
                 removeButton(tryagain);
                 removeButton(menu);
-                removeButton(keepGoing);
                 System.out.println("5");
                 added = false;
-            }
-        });
-
-        keepGoing.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                GuiScreen.getInstance().setActualPanel("Play");
             }
         });
 
@@ -156,23 +137,20 @@ public class PlayPanel extends GuiPanel {
     {
         //format the times
         toFormatTime = DrawUtils.toFormatTime(scores.getTime());
-        //bestTimeFormat = DrawUtils.toFormatTime(scores.getBestTime());
 
         //Draw it
         Graphics2D graphics2D = (Graphics2D)info.getGraphics();
-        graphics2D.setColor(Color.white);
+        graphics2D.setColor(Color.yellow);
         graphics2D.fillRect(0,0,info.getWidth(),info.getHeight());
-        graphics2D.setColor(Color.darkGray);
+        graphics2D.setColor(Color.black);
         graphics2D.setFont(scoreFont);
-        graphics2D.drawString("Score: " + scores.getActualScore(),20,130);
+        graphics2D.drawString("Score: " + scores.getActualScore(),20,140);
         graphics2D.setColor(Color.RED);
         graphics2D.drawString("HighScore: " + scores.getBestScore(),
-                Game.WIDTH - 195,130);
-        graphics2D.setColor(Color.darkGray);
-        graphics2D.drawString("Time: " + toFormatTime,20,80);
+                Game.WIDTH - 195,140);
+        graphics2D.setColor(Color.black);
+        graphics2D.drawString("Time: " + toFormatTime,20,90);
         graphics2D.setColor(Color.RED);
-//        graphics2D.drawString("BestTime: " + bestTimeFormat,
-//                Game.WIDTH - DrawUtils.getMessageWidth("BestTime: " + bestTimeFormat,scoreFont,graphics2D)-20,90);
 
         graphics2D.dispose();
         graphics.drawImage(info,0,0,null);
@@ -193,8 +171,8 @@ public class PlayPanel extends GuiPanel {
         graphics.fillRect(0,0,Game.WIDTH,Game.HEIGHT);
         graphics.setColor(Color.BLUE);
         graphics.setFont(winnerFont);
-        graphics.drawString("Congratulations!",Game.WIDTH/2 - DrawUtils.getMessageWidth("Congratulations!", winnerFont,graphics)/2,150);
-        graphics.drawString("You won!",Game.WIDTH/2 - DrawUtils.getMessageWidth("You won!", winnerFont,graphics)/2,250);
+        graphics.drawString("Congratulations!",Game.WIDTH/2 - DrawUtils.getMessageWidth("Congratulations!", winnerFont,graphics) + 220,70);
+        graphics.drawString("You won the game!",Game.WIDTH/2 - DrawUtils.getMessageWidth("You won the game!", winnerFont,graphics) + 215,95);
     }
 
     @Override
@@ -203,15 +181,6 @@ public class PlayPanel extends GuiPanel {
         board.update();
 
         if(board.isLost())
-        {
-            alpha++;
-            if(alpha > 170)
-            {
-                alpha = 170;
-            }
-        }
-
-        else if(board.isWon())
         {
             alpha++;
             if(alpha > 170)
@@ -244,16 +213,9 @@ public class PlayPanel extends GuiPanel {
             drawGameOver(graphics2D);
         }
 
-        if(board.isWon())
-        {
-            if(!added) {
-                added = true;
-                addButton(menu);
-                addButton(tryagain);
-                addButton(keepGoing);
-            }
-            showVictoryMessage(graphics2D);
-        }
+       if(board.isWon()) {
+           showVictoryMessage(graphics2D);
+       }
         super.render(graphics2D);
     }
 }

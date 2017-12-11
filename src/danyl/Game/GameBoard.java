@@ -30,7 +30,6 @@ public class GameBoard {
     public static int BOARD_WIDTH = (COLS + 1) * SPACING + COLS * Cell.WIDTH;
     public static int BOARD_HEIGHT = (ROWS + 1) * SPACING + ROWS * Cell.HEIGHT;
 
-    private Sound audio;
     private Sound audioMove;
     private Score scores;
     private Leaders leaders;
@@ -176,6 +175,14 @@ public class GameBoard {
             }
             else {
                 startTime = System.nanoTime();
+            }
+        }
+
+        if(won)
+        {
+            if (hasStarted)
+            {
+                hasStarted = false;
             }
         }
 

@@ -3,6 +3,7 @@ package danyl.GuiScreen;
 import danyl.Game.DrawUtils;
 import danyl.Game.Game;
 import danyl.Game.Sound;
+import danyl.Game.Sound;
 
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;

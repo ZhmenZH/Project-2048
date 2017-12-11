@@ -17,7 +17,6 @@ import java.awt.image.BufferedImage;
 
 public class Game extends JPanel implements Runnable, KeyListener,MouseMotionListener,MouseListener{
 
-   // private static final long serialVersionUID = 1L;
     public static final int WIDTH = 500;
     public static final int HEIGHT = 630;
     public static final Font font = new Font("", Font.ITALIC, 30);
@@ -44,7 +43,7 @@ public class Game extends JPanel implements Runnable, KeyListener,MouseMotionLis
 
     private void render() {
         Graphics2D graphics = (Graphics2D) image.getGraphics();
-        graphics.setColor(Color.white);
+        graphics.setColor(Color.yellow);
         graphics.fillRect(0, 0, WIDTH, HEIGHT);
         screen.render(graphics);
         graphics.dispose();
@@ -125,6 +124,7 @@ public class Game extends JPanel implements Runnable, KeyListener,MouseMotionLis
         if(!running) return;
         running = false;
         System.exit(0);
+
     }
 
     @Override
