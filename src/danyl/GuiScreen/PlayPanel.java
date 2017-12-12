@@ -40,13 +40,13 @@ public class PlayPanel extends GuiPanel {
 
     public PlayPanel()
     {
-        audio = new Sound(new File("musicMenu.wav"));
-        audio.play(true);
-        audio.setVolume(0.4f);
+//        audio = new Sound(new File("musicMenu.wav"));
+//        audio.play(true);
+//        audio.setVolume(0.4f);
 
-        audioLost = new Sound(new File("lost.wav"));
+//        audioLost = new Sound(new File("lost.wav"));
+
         scoreFont = Game.font.deriveFont(20f);
-
         gameOverFont = Game.font.deriveFont(90f);
         winnerFont = Game.font.deriveFont(20f);
 
@@ -74,14 +74,14 @@ public class PlayPanel extends GuiPanel {
         musicOn.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-               audio.play(true);
+              // audio.play(true);
             }
         });
 
         musicOff.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                    audio.stop();
+                   // audio.stop();
             }
         });
 
@@ -208,13 +208,13 @@ public class PlayPanel extends GuiPanel {
                 added = true;
                 addButton(menu);
                 addButton(tryagain);
-                audioLost.play(true);
+                //audioLost.play(true);
             }
             drawGameOver(graphics2D);
         }
 
        if(board.isWon()) {
-           showVictoryMessage(graphics2D);
+            showVictoryMessage(graphics2D);
        }
         super.render(graphics2D);
     }

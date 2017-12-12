@@ -11,7 +11,6 @@ public class Menu extends GuiPanel {
 
     private Font titleFont = Game.font.deriveFont(110f);
     private Font creatorFont = Game.font.deriveFont(20f);
-   // private String menu = "Menu";
     private String creator = "By Danyl Zhmyrov";
 
     private String title = "2048";

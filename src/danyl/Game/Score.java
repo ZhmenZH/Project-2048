@@ -89,7 +89,6 @@ public class Score {
         {
             newGame = false;
         }
-
         try {
             File file = new File(filePath,tempFile);
             output = new FileWriter(file);

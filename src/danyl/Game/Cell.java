@@ -37,7 +37,7 @@ public class Cell {
         this.x = x;
         this.y = y;
         slipTo = new Point(x,y);
-        cellimage = new BufferedImage(WIDTH,HEIGHT,BufferedImage.TYPE_INT_ARGB);////??????
+        cellimage = new BufferedImage(WIDTH,HEIGHT,BufferedImage.TYPE_INT_ARGB);
         beginImage = new BufferedImage(WIDTH,HEIGHT,BufferedImage.TYPE_INT_ARGB);
         combineImage = new BufferedImage(WIDTH * 2,HEIGHT* 2,BufferedImage.TYPE_INT_ARGB);
         drawImage();

@@ -25,7 +25,7 @@ public class Keyboard {
         for(int i = 0; i < 4; i++)
         {
             if(i == 0)
-            {
+             {
                 prev[KeyEvent.VK_LEFT] = pressed[KeyEvent.VK_LEFT];
             }
             if(i == 1)
@@ -42,9 +42,4 @@ public class Keyboard {
             }
         }
     }
-
-//    public static boolean typed(int KeyEvent)
-//    {
-//        return !pressed[KeyEvent] && prev[KeyEvent];
-//    }
 }

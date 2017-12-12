@@ -7,73 +7,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b5ca9485-793d-42be-a868-f64f23431a44" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/2048.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/Cell.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/Direction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/DrawUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/Game.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/GameBoard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/Keyboard.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/Leaders.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/Point.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/Rules.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/Score.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/Sound$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/Sound$Listener.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/Sound.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/Game/Start.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/GuiButton.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/GuiPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/GuiScreen.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/LeadersPanel$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/LeadersPanel$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/LeadersPanel$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/LeadersPanel$State.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/LeadersPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/Menu$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/Menu$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/Menu$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/Menu$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/Menu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/PlayPanel$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/PlayPanel$2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/PlayPanel$3.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/PlayPanel$4.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/PlayPanel$5.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/PlayPanel$6.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/PlayPanel$7.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/PlayPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/RulesPanel$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/RulesPanel.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/danyl/GuiScreen/State.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048/oko.puml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Sound$1.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Sound$Listener.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/select1.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/danyl/Game/Rules.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/2048_Project_jar/2048-Project.jar" afterPath="$PROJECT_DIR$/out/artifacts/2048_Project_jar/2048-Project.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Game.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Game.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/GameBoard.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/GameBoard.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Sound$Listener.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Sound$Listener.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Score.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Score.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Sound.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Sound.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Start.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/Game/Start.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/GuiButton.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/GuiButton.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/GuiScreen.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/GuiScreen.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/LeadersPanel$1.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/LeadersPanel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/LeadersPanel$2.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/LeadersPanel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/LeadersPanel$3.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/LeadersPanel$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/LeadersPanel$State.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/LeadersPanel$State.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/LeadersPanel.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/LeadersPanel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/Menu$1.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/Menu$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/Menu$2.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/Menu$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/Menu$3.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/Menu$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/Menu$4.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/Menu$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/Menu.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/Menu.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$1.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$2.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$3.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$4.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$4.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$5.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$6.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel$6.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/PlayPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/RulesPanel.class" afterPath="$PROJECT_DIR$/out/production/2048-Project/danyl/GuiScreen/RulesPanel.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/2048-Project.iml" afterPath="$PROJECT_DIR$/2048-Project.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RESULTS.tmp" afterPath="$PROJECT_DIR$/RESULTS.tmp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/Game.java" afterPath="$PROJECT_DIR$/src/danyl/Game/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/2048_Project_jar/RESULTS.tmp" afterPath="$PROJECT_DIR$/out/artifacts/2048_Project_jar/RESULTS.tmp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/Cell.java" afterPath="$PROJECT_DIR$/src/danyl/Game/Cell.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/GameBoard.java" afterPath="$PROJECT_DIR$/src/danyl/Game/GameBoard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/Keyboard.java" afterPath="$PROJECT_DIR$/src/danyl/Game/Keyboard.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/Score.java" afterPath="$PROJECT_DIR$/src/danyl/Game/Score.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/Sound.java" afterPath="$PROJECT_DIR$/src/danyl/Game/Sound.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/Game/Start.java" afterPath="$PROJECT_DIR$/src/danyl/Game/Start.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/GuiScreen/GuiButton.java" afterPath="$PROJECT_DIR$/src/danyl/GuiScreen/GuiButton.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java" afterPath="$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/GuiScreen/LeadersPanel.java" afterPath="$PROJECT_DIR$/src/danyl/GuiScreen/LeadersPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/GuiScreen/Menu.java" afterPath="$PROJECT_DIR$/src/danyl/GuiScreen/Menu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/GuiScreen/PlayPanel.java" afterPath="$PROJECT_DIR$/src/danyl/GuiScreen/PlayPanel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/danyl/GuiScreen/RulesPanel.java" afterPath="$PROJECT_DIR$/src/danyl/GuiScreen/RulesPanel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,109 +62,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="GameBoard.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/danyl/Game/GameBoard.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="43" column="44" lean-forward="false" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Start.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/danyl/Game/Start.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/Menu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Game.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/danyl/Game/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GuiButton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayPanel.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PlayPanel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/PlayPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+            <state relative-caret-position="136">
+              <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RESULTS.tmp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RESULTS.tmp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Scores" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Scores">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GuiPanel.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GuiScreen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-              <folding>
-                <element signature="e#1010#1011#0" expanded="true" />
-                <element signature="e#1057#1058#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -237,34 +114,34 @@
         <option value="$PROJECT_DIR$/src/danyl/Game/Scores.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/Point.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/DrawUtils.java" />
-        <option value="$PROJECT_DIR$/src/danyl/Game/Keyboard.java" />
         <option value="$PROJECT_DIR$/src/danyl/GuiScreen/PlayPanell.java" />
         <option value="$PROJECT_DIR$/src/danyl/GuiScreen/MainMenuPanel.java" />
         <option value="$PROJECT_DIR$/src/danyl/GuiScreen/LeaderboardsPanel.java" />
         <option value="$PROJECT_DIR$/src/danyl/GuiScreen/State.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/Keys.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/Gamee.java" />
-        <option value="$PROJECT_DIR$/src/danyl/Game/Start.java" />
         <option value="$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreenn.java" />
         <option value="$PROJECT_DIR$/src/danyl/GuiScreen/MyButton.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/fefe.java" />
-        <option value="$PROJECT_DIR$/src/danyl/Game/Cell.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/AudioHandler.java" />
-        <option value="$PROJECT_DIR$/src/danyl/Game/Score.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/Leaders.java" />
-        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/LeadersPanel.java" />
         <option value="$PROJECT_DIR$/src/danyl/GuiScreen/GuiPanel.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/Rules.java" />
-        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/Menu.java" />
         <option value="$PROJECT_DIR$/src/danyl/GuiScreen/RulesPanel.java" />
-        <option value="$PROJECT_DIR$/src/danyl/Game/Game.java" />
-        <option value="$PROJECT_DIR$/src/danyl/Game/Sound.java" />
-        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/GuiButton.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Score.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/Menu.java" />
         <option value="$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Sound.java" />
         <option value="$PROJECT_DIR$/src/danyl/GuiScreen/PlayPanel.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/GuiButton.java" />
+        <option value="$PROJECT_DIR$/src/danyl/GuiScreen/LeadersPanel.java" />
         <option value="$PROJECT_DIR$/RESULTS.tmp" />
         <option value="$PROJECT_DIR$/Scores" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Start.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Game.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Keyboard.java" />
         <option value="$PROJECT_DIR$/src/danyl/Game/GameBoard.java" />
+        <option value="$PROJECT_DIR$/src/danyl/Game/Cell.java" />
       </list>
     </option>
   </component>
@@ -295,7 +172,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -332,9 +208,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -493,7 +370,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329296" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -509,7 +385,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24678273" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25435275" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24981076" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -588,13 +464,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Point.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/danyl/Game/Direction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -643,145 +512,19 @@
     <entry file="file://$PROJECT_DIR$/src/danyl/Game/fefe.java" />
     <entry file="file://$PROJECT_DIR$/src/danyl/Game/Keys.java" />
     <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/MyButton.java" />
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Keyboard.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Rules.java" />
     <entry file="file://$PROJECT_DIR$/src/danyl/Game/DrawUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="67" column="1" lean-forward="true" selection-start-line="67" selection-start-column="1" selection-end-line="67" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/LeadersPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="99" column="24" lean-forward="false" selection-start-line="99" selection-start-column="24" selection-end-line="99" selection-end-column="24" />
+        <state relative-caret-position="391">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/State.java">
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Point.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Rules.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/RulesPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="49" column="39" lean-forward="false" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Leaders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="251" column="5" lean-forward="true" selection-start-line="251" selection-start-column="5" selection-end-line="251" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Score.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="214">
-          <caret line="162" column="13" lean-forward="false" selection-start-line="162" selection-start-column="13" selection-end-line="162" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Sound.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1513000062390" expanded="true" signature="708:834" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="45" column="5" lean-forward="true" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-          <folding>
-            <element signature="e#1010#1011#0" expanded="true" />
-            <element signature="e#1057#1058#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Start.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/PlayPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="101" column="0" lean-forward="true" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -797,18 +540,144 @@
     <entry file="file://$PROJECT_DIR$/RESULTS.tmp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Keyboard.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="27" column="1" lean-forward="false" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Cell.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3570">
+          <caret line="215" column="5" lean-forward="true" selection-start-line="215" selection-start-column="5" selection-end-line="215" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2533">
+          <caret line="174" column="1" lean-forward="true" selection-start-line="174" selection-start-column="1" selection-end-line="174" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Sound.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="74" column="26" lean-forward="true" selection-start-line="74" selection-start-column="26" selection-end-line="74" selection-end-column="26" />
+          <folding>
+            <marker date="1513028272728" expanded="true" signature="750:878" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Start.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="21" lean-forward="true" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/danyl/Game/GameBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="43" column="44" lean-forward="false" selection-start-line="43" selection-start-column="44" selection-end-line="43" selection-end-column="44" />
+        <state relative-caret-position="374">
+          <caret line="159" column="25" lean-forward="false" selection-start-line="159" selection-start-column="25" selection-end-line="159" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Score.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="187" column="1" lean-forward="true" selection-start-line="187" selection-start-column="1" selection-end-line="187" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/Game/Leaders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="145" column="33" lean-forward="true" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/RulesPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="54" column="34" lean-forward="true" selection-start-line="54" selection-start-column="34" selection-end-line="54" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/LeadersPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="90" column="5" lean-forward="true" selection-start-line="90" selection-start-column="5" selection-end-line="90" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/GuiButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="74" column="1" lean-forward="true" selection-start-line="74" selection-start-column="1" selection-end-line="74" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/danyl/GuiScreen/PlayPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>

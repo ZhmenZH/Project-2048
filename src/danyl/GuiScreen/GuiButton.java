@@ -30,7 +30,7 @@ public class GuiButton {
     private Sound audio;
 
     public GuiButton(int x, int y, int width, int height){
-        audio = new Sound(new File("select.wav"));
+        //audio = new Sound(new File("select.wav"));
 
         clickBox = new Rectangle(x, y, width, height);
         actionListeners = new ArrayList<ActionListener>();
@@ -76,7 +76,7 @@ public class GuiButton {
             for(ActionListener al : actionListeners){
                 al.actionPerformed(null);
             }
-            audio.play(true);
+            //audio.play(true);
         }
         currentState = State.RELEASED;
     }

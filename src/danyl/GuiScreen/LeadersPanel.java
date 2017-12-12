@@ -27,7 +27,6 @@ public class LeadersPanel extends GuiPanel{
     private Font scoreFont = Game.font.deriveFont(30f);
     private State currentState = State.SCORE;
 
-
     public LeadersPanel(){
         super();
         lBoard = Leaders.getInstance();

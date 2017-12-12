@@ -40,11 +40,6 @@ public class GuiScreen {
         panels.put(panelName, panel);
     }
 
-    public void removePanel(String panelName, GuiPanel panel)
-    {
-        panels.remove(panelName, panel);
-    }
-
     public void setActualPanel(String panelName) {
         currentPanel = panelName;
     }

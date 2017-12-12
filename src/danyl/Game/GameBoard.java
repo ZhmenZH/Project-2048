@@ -31,6 +31,8 @@ public class GameBoard {
     public static int BOARD_HEIGHT = (ROWS + 1) * SPACING + ROWS * Cell.HEIGHT;
 
     private Sound audioMove;
+    private Sound audioWon;
+
     private Score scores;
     private Leaders leaders;
 
@@ -46,8 +48,9 @@ public class GameBoard {
         createBoardImage();
         initiallyValues();
 
-        audioMove = new Sound(new File("move.wav"));
-        audioMove.setVolume(0.65f);
+//        audioMove = new Sound(new File("move.wav"));
+//        audioMove.setVolume(0.65f);
+//        audioWon = new Sound(new File("won.wav"));
 
         leaders = Leaders.getInstance();
         leaders.loadScores();
@@ -186,7 +189,7 @@ public class GameBoard {
             }
         }
 
-        checkKeys();
+        checkKeyboard();
 
         if(scores.getActualScore() > scores.getBestScore())
         {
@@ -291,7 +294,7 @@ public class GameBoard {
     }
 
     private void moveCells(Direction direction) {
-        audioMove.play(true);
+        //audioMove.play(true);
         boolean canMove = false;
         int horizontal_direction = 0;
         int vertical_direction = 0;
@@ -477,7 +480,7 @@ public class GameBoard {
         return false;
     }
 
-    private void checkKeys() {
+    private void checkKeyboard() {
         if (!Keyboard.pressed[KeyEvent.VK_LEFT] && Keyboard.prev[KeyEvent.VK_LEFT]) {
             moveCells(Direction.LEFT);
             if (!hasStarted) hasStarted = !lost;
@@ -509,7 +512,7 @@ public class GameBoard {
             leaders.addScore(scores.getActualScore());
             //leaders.addTime(scores.getTime());
             leaders.saveScores();
-            audioMove.stop();
+            //audioMove.stop();
         }
         this.lost = lost;
     }
@@ -524,13 +527,13 @@ public class GameBoard {
         return won;
     }
 
-    public void  setWon(boolean won)
+    public void setWon(boolean won)
     {
         if(!this.won && won && !lost)
         {
             leaders.addTime(scores.getTime());
-
             leaders.saveScores();
+            //audioWon.play(true);
         }
         this.won = won;
     }
